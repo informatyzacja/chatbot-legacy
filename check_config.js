@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const config = require('./response_config.json');
 
 function hasDuplicates(array) {
@@ -143,4 +145,6 @@ function invalidConfigDescription(config) {
     return null;
 }
 
-console.log(invalidConfigDescription(config))
+var message = invalidConfigDescription(config);
+console.log(message ? message : "jest ok");
+process.exit(message == null ? 0 : 1)
