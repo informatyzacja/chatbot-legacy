@@ -1,0 +1,19 @@
+#
+# Runs defined tests on each new commit and pull request in repository.
+#
+
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+  check_config_syntax:
+    runs-on: ubuntu-latest
+    container:
+      image: library/node
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.0.0
+    - name: Tests
+      run: |
+          node check_config_syntax.js
