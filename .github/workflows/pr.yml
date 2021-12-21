@@ -1,0 +1,23 @@
+name: tests
+
+on: 
+  push:
+    branches:
+      - google-sheets
+
+jobs:
+  autoPullRequest:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.0.0
+    - name: Setup node
+      uses: actions/setup-node@v2
+    - name: Tests
+      run: node check_config.js
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        commit-message: Config change
+        title: Config change
+        branch: development
