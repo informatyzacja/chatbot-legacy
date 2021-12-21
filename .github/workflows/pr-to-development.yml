@@ -1,0 +1,26 @@
+#
+# On demand fetches the current chatbot configuration from Google sheet
+# and creates/updates a pull request to branch development when there are
+# any changes (using intermediate development-candidate branch).
+#
+
+name: PR to development
+
+on: workflow_dispatch
+
+jobs:
+  auto_pull_request:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.0.0
+      with:
+        fetch-depth: 0
+    - name: Create/update pull request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        commit-message: Config change from Google sheet
+        title: Config change from Google sheet
+        base: development
+        branch: development-candidate
+        token: ${{ secrets.PAT }}
