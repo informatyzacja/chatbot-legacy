@@ -21,7 +21,7 @@
     "menu": [
         {
             "payload": "menu_sesja",
-            "buttonText": "Sesja",
+            "buttonText": "Sesja2",
             "inIceBreakers": true,
             "inQuickMenu": true,
             "choices": [
