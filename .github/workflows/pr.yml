@@ -22,3 +22,4 @@ jobs:
         title: Config change
         base: development
         branch: google-sheets
+        branch-suffix: short-commit-hash
