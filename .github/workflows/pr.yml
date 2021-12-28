@@ -20,4 +20,5 @@ jobs:
       with:
         commit-message: Config change
         title: Config change
-        branch: development
+        base: development
+        branch: google-sheets
