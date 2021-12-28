@@ -430,22 +430,6 @@ exports.handler = async (event, context) => {
     try {
         console.log('Received event:', JSON.stringify(event, null, 2));
         
-        if(event.set_ice_breakers == true) {
-            /*
-             * A way to set desired `ice_breakes` - just invoke the Lambda with
-             * input set to {"set_ice_breakers":true}
-             */
-            for(let page_id of Object.keys(config.PAGE_ACCESS_TOKEN)) {
-                console.log(`Setting ice breakers for page with id ${page_id}`);
-                await set_ice_breakers(page_id);
-            }
-            
-            return {
-                statusCode: 200,
-                body: '',
-            };
-        }
-        
         if(event.version && event.version != '2.0') {
             console.log(`[!!] WARNING: event.version ('${event.version}') different `
                 + `from expected '2.0' - if something breaks it's propably because of this`);
@@ -463,6 +447,25 @@ exports.handler = async (event, context) => {
              * Everything else (e.g. messages, typing notifications, reactions, ...)
              * gets received through a POST.
              */
+
+            /*
+             * Triggered by Netlify when a successfull deploy is finished
+             */
+            if(event.queryStringParameters.webhookSuccessfulDeploy == '1') {
+                /*
+                 * A way to set desired `ice_breakes` - just invoke the Lambda with
+                 * input set to {"set_ice_breakers":true}
+                 */
+                for(let page_id of Object.keys(config.PAGE_ACCESS_TOKEN)) {
+                    console.log(`Setting ice breakers for page with id ${page_id}`);
+                    await set_ice_breakers(page_id);
+                }
+
+                return {
+                    statusCode: 200,
+                    body: '"set ice_breakers"',
+                };
+            }
              
             /*
              * Make sure the request actually comes from Facebook by comparing the signature
@@ -475,7 +478,7 @@ exports.handler = async (event, context) => {
              * We wait for all message responses to finish sending out
              */
             await Promise.all(post_request(JSON.parse(event.body)));
-            
+
             return {
                 statusCode: 200,
                 body: ""
