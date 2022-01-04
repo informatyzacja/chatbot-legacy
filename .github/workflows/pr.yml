@@ -15,7 +15,7 @@ jobs:
     - name: Fetch from google sheets
         uses: ./
         with:
-          command: curl -L 'https://docs.google.com/spreadsheets/d/1z4sa4K54l5WGXcYj0Fi73Pb5euX5HBHxlvnykNBeAnE/export?format=csv&id=1z4sa4K54l5WGXcYj0Fi73Pb5euX5HBHxlvnykNBeAnE&gid=1396758614' | sed -e 's#""#"#g' -e 's#^"##g' -e 's#"$#\n#g'
+          command: curl -L 'https://docs.google.com/spreadsheets/d/1z4sa4K54l5WGXcYj0Fi73Pb5euX5HBHxlvnykNBeAnE/export?format=csv&id=1z4sa4K54l5WGXcYj0Fi73Pb5euX5HBHxlvnykNBeAnE&gid=1396758614' | sed -e 's#""#"#g' -e 's#^"##g' -e 's#"$#\n#g' | tee response_config.json
 #    - name: Make changes to pull request
 #      run: git fetch --all ; git reset --soft refs/remotes/origin/development
     - name: Create Pull Request
