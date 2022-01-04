@@ -1,9 +1,7 @@
 name: Auto Pull Request
 
 on: 
-  push:
-    branches:
-      - google-sheets
+  workflow_dispatch:
 
 jobs:
   autoPullRequest:
@@ -11,10 +9,15 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2.0.0
+        fetch-depth: 0
     - name: Setup node
       uses: actions/setup-node@v2
-    - name: Make changes to pull request
-      run: git fetch --all ; git reset --soft refs/remotes/origin/development
+    - name: Fetch from google sheets
+        uses: ./
+        with:
+          command: curl -L 'https://docs.google.com/spreadsheets/d/1z4sa4K54l5WGXcYj0Fi73Pb5euX5HBHxlvnykNBeAnE/export?format=csv&id=1z4sa4K54l5WGXcYj0Fi73Pb5euX5HBHxlvnykNBeAnE&gid=1396758614' | sed -e 's#""#"#g' -e 's#^"##g' -e 's#"$#\n#g'
+#    - name: Make changes to pull request
+#      run: git fetch --all ; git reset --soft refs/remotes/origin/development
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
