@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Chatbot</title>
+        <style type="text/css">
+            body {
+                background-color: #282828;
+                color: #ebdbb2;
+            }
+            div.outer {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: table;
+                height: 100%;
+                width: 100%;
+            }
+            div.inner {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+            input {
+                border: 2px solid #a89984;
+                border-radius: 10px;
+                box-shadow: 0 0 10px 5px #928374,
+                            inset 0 0 5px 3px #928374;
+                display: inline-block;
+                font-size: 2.0vmin;
+                font-weight: bold;
+                text-shadow: 3px 4px 5px #000;
+                width: 50vw;
+                height: 20vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner">
+                <form action="/.netlify/functions/update_github" method="post">
+                    <input type="submit" value="Aktualizuj">
+                </form>
+            </div>
+         </div>
+    </body>
+</html>
