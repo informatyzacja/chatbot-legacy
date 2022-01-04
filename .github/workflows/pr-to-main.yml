@@ -1,0 +1,28 @@
+#
+# Automatically creates/updates a pull request from branch development
+# to branch main whenever there are new changes in development branch.
+#
+
+name: PR to main
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  auto_pull_request:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Create/update pull request
+      uses: devops-infra/action-pull-request@v0.4.2
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        source_branch: development
+        target_branch: main
+        title: Update main branch
+        body: "**Automated pull request**"
