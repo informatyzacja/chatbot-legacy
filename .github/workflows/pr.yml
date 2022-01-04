@@ -13,13 +13,11 @@ jobs:
     - name: Setup node
       uses: actions/setup-node@v2
     - name: Fetch from google sheets
-      run: curl -L 'https://docs.google.com/spreadsheets/d/1z4sa4K54l5WGXcYj0Fi73Pb5euX5HBHxlvnykNBeAnE/export?format=csv&id=1z4sa4K54l5WGXcYj0Fi73Pb5euX5HBHxlvnykNBeAnE&gid=1396758614' | sed -e 's#""#"#g' -e 's#^"##g' -e 's#"$#\n#g' | tee response_config.json
-#    - name: Make changes to pull request
-#      run: git fetch --all ; git reset --soft refs/remotes/origin/development
+      run: curl -s -L 'https://docs.google.com/spreadsheets/d/1z4sa4K54l5WGXcYj0Fi73Pb5euX5HBHxlvnykNBeAnE/export?format=csv&id=1z4sa4K54l5WGXcYj0Fi73Pb5euX5HBHxlvnykNBeAnE&gid=1396758614' | sed -e 's#""#"#g' -e 's#^"{$#{#g' -e 's#^}"$#\n#g'
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
-        commit-message: Config change
-        title: Config change
+        commit-message: Config change from google sheet
+        title: Config change from google sheet
         base: development
         branch: development-candidate
