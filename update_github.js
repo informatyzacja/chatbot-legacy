@@ -9,14 +9,9 @@ const crypto = require('crypto');
 async function post(url, data, headers) {
     console.log("Sending a post request with data: ", JSON.stringify(data, null, 2))
     
-    /*
-     * No idea why escaping unicode sequences (to_ascii_safe) here is neccessary,
-     * facebook isn't able to parse the JSON correctly otherwise, even if "; charset=utf-8"
-     * is added to the Content-Type header
-     *
-     * Requests without escaping work when sent from curl though, a mistery.
-     */
-    const dataString = to_ascii_safe(JSON.stringify(data));
+    const dataString = JSON.stringify(data);
+
+    headers['Content-Length'] = dataString.length;
 
     const options = {
         method: 'POST',
@@ -71,8 +66,8 @@ exports.handler = async (event, context) => {
             },
             { 
                 'Content-Type': 'application/vnd.github.v3+json',
-                'Content-Length': dataString.length,
-                'Authorization': `token ${process.env.GITHUB_TOKEN}`
+                'Authorization': `token ${process.env.GITHUB_TOKEN}`,
+                'User-Agent': 'curl/7.79.1'
             });
 
         console.log(`Response from post: ${postResponse}`);
