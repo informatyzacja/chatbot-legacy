@@ -19,6 +19,8 @@ async function post(url, data, headers) {
         timeout: 10000, // in ms
     };
 
+    console.log("options for posst request: ", JSON.stringify(options, null, 2));
+
     return new Promise((resolve, reject) => {
         const req = https.request(url, options, (res) => {
             const body = [];
