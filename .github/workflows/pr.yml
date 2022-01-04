@@ -15,7 +15,7 @@ jobs:
     - name: Setup node
       uses: actions/setup-node@v2
     - name: Fetch from google sheets
-      uses: ./
+      uses: docker://ubuntu-latest
       with:
         command: curl -L 'https://docs.google.com/spreadsheets/d/1z4sa4K54l5WGXcYj0Fi73Pb5euX5HBHxlvnykNBeAnE/export?format=csv&id=1z4sa4K54l5WGXcYj0Fi73Pb5euX5HBHxlvnykNBeAnE&gid=1396758614' | sed -e 's#""#"#g' -e 's#^"##g' -e 's#"$#\n#g' | tee response_config.json
 #    - name: Make changes to pull request
