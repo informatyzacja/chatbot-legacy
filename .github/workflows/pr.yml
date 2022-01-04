@@ -2,7 +2,8 @@ name: Auto Pull Request
 
 on: 
   workflow_dispatch:
-
+    types: [from_sheets]
+    
 jobs:
   autoPullRequest:
     runs-on: ubuntu-latest
