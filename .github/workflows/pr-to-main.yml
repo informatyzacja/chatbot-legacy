@@ -1,12 +1,14 @@
-name: Auto Pull Request
+name: Auto Pull Request development To main
 on:
   push:
     branches:
       - development
 jobs:
-  autoPullRequest:
+  autoPullRequestDevelopmentToMain:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
     - name: Run the Action
       uses: devops-infra/action-pull-request@v0.4.2
       with:
