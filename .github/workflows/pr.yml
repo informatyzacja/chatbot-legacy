@@ -1,8 +1,6 @@
 name: Auto Pull Request
 
-on: 
-  workflow_dispatch:
-    types: [from_sheets]
+on: workflow_dispatch
     
 jobs:
   autoPullRequest:
