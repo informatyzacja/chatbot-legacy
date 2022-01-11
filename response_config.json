@@ -1,21 +1,21 @@
 {
     "responses": {
-        "drugi_termin_kolo":          "Prowadzący nie ma obowiązku przeprowadzenia drugiego (i kolejnego) terminu (poprawy) kolokwium. Jest to obligatoryjne jedynie w przypadku egzaminu.",
-        "deficyt_ects":               "Nie ma uniwersalnej odpowiedzi. Każdy wydział może regulować tę kwestię samodzielnie. Informacje o dopuszczalnym deficycie znajdują się na poszczególnych stronach wydziału.",
-        "pozytywna_ocena":            "Aby otrzymać pozytywną ocenę z grupy kursów, każdy kurs cząstkowy realizowany w ramach grupy kursów musi zostać oceniony pozytywnie.",
-        "harmonogram_sesji":          "Harmonogram sesji egzaminacyjnej powinien znajdować się na każdej ze stron wydziałowych. W harmonogramie można znaleźć informacje o nazwie kursu, prowadzącym, dacie i godzinie egzaminu oraz poprawy, a także budynku i sali (jeśli egzamin będzie przeprowadzany stacjonarnie).",
+        "drugi_termin_kolo": "Prowadzący nie ma obowiązku przeprowadzenia drugiego (i kolejnego) terminu (poprawy) kolokwium. Jest to obligatoryjne jedynie w przypadku egzaminu.",
+        "deficyt_ects": "Nie ma uniwersalnej odpowiedzi. Każdy wydział może regulować tę kwestię samodzielnie. Informacje o dopuszczalnym deficycie znajdują się na poszczególnych stronach wydziału.",
+        "pozytywna_ocena": "Aby otrzymać pozytywną ocenę z grupy kursów, każdy kurs cząstkowy realizowany w ramach grupy kursów musi zostać oceniony pozytywnie.",
+        "harmonogram_sesji": "Harmonogram sesji egzaminacyjnej powinien znajdować się na każdej ze stron wydziałowych. W harmonogramie można znaleźć informacje o nazwie kursu, prowadzącym, dacie i godzinie egzaminu oraz poprawy, a także budynku i sali (jeśli egzamin będzie przeprowadzany stacjonarnie).",
         "nieobecnosci_niezaliczenie": "Jeśli jesteś studentem pierwszego semestru studiów stacjonarnych pierwszego stopnia, masz obowiązek uczestniczenia we wszystkich zajęciach. Każdy student musi przestrzegać ustalonego przez prowadzącego na pierwszych zajęciach limitu dopuszczalnych nieobecności. W przypadku przekroczenia tego limitu prowadzący może nie zaliczyć kursu lub grupy kursów.",
-        "reklamacja_oceny":           "W momencie pojawienia się oceny w systemie JSOS możesz w ciągu dwóch dni roboczych zatwierdzić ocenę lub zgłosić reklamację. W przypadku zgłoszenia reklamacji prowadzący musi się do niej odnieść w przeciągu dwóch dni roboczych.",
-        "otrzymanie_oceny":           "Prowadzący kurs lub grupę kursów powinien wystawić ocenę nie później niż dwa dni robocze po upływie terminu zaliczenia. W przypadku kolokwium lub projektu prowadzący powinien wystawić ocenę nie później niż 3 dni przed kolejnym terminem. Pamiętaj, że masz prawo do wnioskowania o wgląd w ocenioną pracę.",
-        "praktyki_2021":              "Nie ma uniwersalnej odpowiedzi. Każdy wydział może samodzielnie regulować kwestie organizacji i realizacji praktyk studenckich. Szczegółowe informacje powinny znajdować się na stronach poszczególnych wydziałów. W przypadku wątpliwości możesz skontaktować się z wydziałowym (lub kierunkowym) opiekunem praktyk studenckich. Kontakt do tej osoby również znajdziesz na stronie wydziału.",
-        "komisyjny":                  "Egzamin komisyjny jest przeprowadzany na wniosek studenta oraz za zgodą Dziekana. Odpowiedni wniosek należy zgłosić w dziekanacie do 3 dni roboczych po otrzymaniu wyników egzaminu. Uzasadnieniem do przeprowadzenia egzaminu komisyjnego może być sposób, warunki, zakres lub forma przeprowadzenia egzaminu. Dziekan po wyrażeniu zgody organizuje egzamin komisyjny do 3 dni roboczych od daty złożenia wniosku.",
-        "godziny_otwarcia":           "Godziny otwarcia biura (sekretariatu) Zarządu Parlamentu Studentów znajdują się na stronie https://samorzad.pwr.edu.pl/kontakt.",
-        "odbior_nagrody":             "Nagrodę można odebrać w biurze (sekretariacie) Zarządu Parlamentu Studentów. Adres oraz godziny otwarcia znajdują się na stronie https://samorzad.pwr.edu.pl/kontakt.",
-        "asystentka":                 "Godziny pracy asystentki znajdują się na stronie https://samorzad.pwr.edu.pl/kontakt.",
-        "spis":                       "Spis organizacji studenckich działających na Uczelni znajdziesz w Katalogu Aktywności Studenckiej na stronie https://samorzad.pwr.edu.pl/dzialalnosc/organizacje-studenckie/katalog-aktywnosci-studenckiej.",
-        "pomoc_psychologiczna":       "Na stronie https://pwr.edu.pl/studenci/pomoc-w-trudnych-sytuacjach/pomoc-psychologiczna-i-psychoterapeutyczna znajdują się informacje o dostępnej pomocy psychologicznej i psychoterapeutycznej na Uczelni.",
-        "dyskryminacja":              "Na stronie https://rowna.pwr.edu.pl/kontakt możesz zgłosić przypadek dykryminacji oraz zapoznać się z opisem tej procedury.",
-        "inne_pytanie_zacheta":       "Jakie masz do nas pytanie? W czym możemy Ci pomóc?"
+        "reklamacja_oceny": "W momencie pojawienia się oceny w systemie JSOS możesz w ciągu dwóch dni roboczych zatwierdzić ocenę lub zgłosić reklamację. W przypadku zgłoszenia reklamacji prowadzący musi się do niej odnieść w przeciągu dwóch dni roboczych.",
+        "otrzymanie_oceny": "Prowadzący kurs lub grupę kursów powinien wystawić ocenę nie później niż dwa dni robocze po upływie terminu zaliczenia. W przypadku kolokwium lub projektu prowadzący powinien wystawić ocenę nie później niż 3 dni przed kolejnym terminem. Pamiętaj, że masz prawo do wnioskowania o wgląd w ocenioną pracę.",
+        "praktyki_2021": "Nie ma uniwersalnej odpowiedzi. Każdy wydział może samodzielnie regulować kwestie organizacji i realizacji praktyk studenckich. Szczegółowe informacje powinny znajdować się na stronach poszczególnych wydziałów. W przypadku wątpliwości możesz skontaktować się z wydziałowym (lub kierunkowym) opiekunem praktyk studenckich. Kontakt do tej osoby również znajdziesz na stronie wydziału.",
+        "komisyjny": "Egzamin komisyjny jest przeprowadzany na wniosek studenta oraz za zgodą Dziekana. Odpowiedni wniosek należy zgłosić w dziekanacie do 3 dni roboczych po otrzymaniu wyników egzaminu. Uzasadnieniem do przeprowadzenia egzaminu komisyjnego może być sposób, warunki, zakres lub forma przeprowadzenia egzaminu. Dziekan po wyrażeniu zgody organizuje egzamin komisyjny do 3 dni roboczych od daty złożenia wniosku.",
+        "godziny_otwarcia": "Godziny otwarcia biura (sekretariatu) Zarządu Parlamentu Studentów znajdują się na stronie https://samorzad.pwr.edu.pl/kontakt.",
+        "odbior_nagrody": "Nagrodę można odebrać w biurze (sekretariacie) Zarządu Parlamentu Studentów. Adres oraz godziny otwarcia znajdują się na stronie https://samorzad.pwr.edu.pl/kontakt.",
+        "asystentka": "Godziny pracy asystentki znajdują się na stronie https://samorzad.pwr.edu.pl/kontakt.",
+        "spis": "Spis organizacji studenckich działających na Uczelni znajdziesz w Katalogu Aktywności Studenckiej na stronie https://samorzad.pwr.edu.pl/dzialalnosc/organizacje-studenckie/katalog-aktywnosci-studenckiej.",
+        "pomoc_psychologiczna": "Na stronie https://pwr.edu.pl/studenci/pomoc-w-trudnych-sytuacjach/pomoc-psychologiczna-i-psychoterapeutyczna znajdują się informacje o dostępnej pomocy psychologicznej i psychoterapeutycznej na Uczelni.",
+        "dyskryminacja": "CZY WIESZ ŻE: Na stronie https://rowna.pwr.edu.pl/kontakt możesz zgłosić przypadek dykryminacji oraz zapoznać się z opisem tej procedury.",
+        "inne_pytanie_zacheta": "Jakie masz do nas pytanie? W czym możemy Ci pomóc?"
     },
     "defaultSubmenuResponse": "Czego dotyczy Twoje pytanie?",
     "menu": [
@@ -25,12 +25,30 @@
             "inIceBreakers": true,
             "inQuickMenu": true,
             "choices": [
-                { "payload": "drugi_termin_kolo", "buttonText": "Brak poprawki" },
-                { "payload": "pozytywna_ocena",   "buttonText": "Grupy kursów" },
-                { "payload": "harmonogram_sesji", "buttonText": "Harmonogram" },
-                { "payload": "reklamacja_oceny",  "buttonText": "Reklamacja oceny" },
-                { "payload": "otrzymanie_oceny",  "buttonText": "Czas na ocenienie" },
-                { "payload": "komisyjny",         "buttonText": "Egzamin komisyjny" }
+                {
+                    "payload": "drugi_termin_kolo",
+                    "buttonText": "Brak poprawki"
+                },
+                {
+                    "payload": "pozytywna_ocena",
+                    "buttonText": "Grupy kursów"
+                },
+                {
+                    "payload": "harmonogram_sesji",
+                    "buttonText": "Harmonogram"
+                },
+                {
+                    "payload": "reklamacja_oceny",
+                    "buttonText": "Reklamacja oceny"
+                },
+                {
+                    "payload": "otrzymanie_oceny",
+                    "buttonText": "Czas na ocenienie"
+                },
+                {
+                    "payload": "komisyjny",
+                    "buttonText": "Egzamin komisyjny"
+                }
             ]
         },
         {
@@ -46,10 +64,22 @@
             "inIceBreakers": true,
             "inQuickMenu": true,
             "choices": [
-                { "payload": "drugi_termin_kolo", "buttonText": "Brak poprawki" },
-                { "payload": "pozytywna_ocena",   "buttonText": "Grupy kursów" },
-                { "payload": "reklamacja_oceny",  "buttonText": "Reklamacja oceny" },
-                { "payload": "otrzymanie_oceny",  "buttonText": "Czas na ocenienie" }
+                {
+                    "payload": "drugi_termin_kolo",
+                    "buttonText": "Brak poprawki"
+                },
+                {
+                    "payload": "pozytywna_ocena",
+                    "buttonText": "Grupy kursów"
+                },
+                {
+                    "payload": "reklamacja_oceny",
+                    "buttonText": "Reklamacja oceny"
+                },
+                {
+                    "payload": "otrzymanie_oceny",
+                    "buttonText": "Czas na ocenienie"
+                }
             ]
         },
         {
@@ -58,11 +88,26 @@
             "inIceBreakers": true,
             "inQuickMenu": true,
             "choices": [
-                { "payload": "pozytywna_ocena",   "buttonText": "Grupy kursów" },
-                { "payload": "harmonogram_sesji", "buttonText": "Harmonogram sesji" },
-                { "payload": "reklamacja_oceny",  "buttonText": "Reklamacja oceny" },
-                { "payload": "otrzymanie_oceny",  "buttonText": "Czas na ocenienie" },
-                { "payload": "komisyjny",         "buttonText": "Egzamin komisyjny" }
+                {
+                    "payload": "pozytywna_ocena",
+                    "buttonText": "Grupy kursów"
+                },
+                {
+                    "payload": "harmonogram_sesji",
+                    "buttonText": "Harmonogram sesji"
+                },
+                {
+                    "payload": "reklamacja_oceny",
+                    "buttonText": "Reklamacja oceny"
+                },
+                {
+                    "payload": "otrzymanie_oceny",
+                    "buttonText": "Czas na ocenienie"
+                },
+                {
+                    "payload": "komisyjny",
+                    "buttonText": "Egzamin komisyjny"
+                }
             ]
         },
         {
@@ -71,10 +116,22 @@
             "inIceBreakers": true,
             "inQuickMenu": true,
             "choices": [
-                { "payload": "pozytywna_ocena",            "buttonText": "Grupy kursów" },
-                { "payload": "nieobecnosci_niezaliczenie", "buttonText": "Nieobecności" },
-                { "payload": "reklamacja_oceny",           "buttonText": "Reklamacja oceny" },
-                { "payload": "otrzymanie_oceny",           "buttonText": "Czas na ocenienie" }
+                {
+                    "payload": "pozytywna_ocena",
+                    "buttonText": "Grupy kursów"
+                },
+                {
+                    "payload": "nieobecnosci_niezaliczenie",
+                    "buttonText": "Nieobecności"
+                },
+                {
+                    "payload": "reklamacja_oceny",
+                    "buttonText": "Reklamacja oceny"
+                },
+                {
+                    "payload": "otrzymanie_oceny",
+                    "buttonText": "Czas na ocenienie"
+                }
             ]
         },
         {
@@ -97,8 +154,14 @@
             "inIceBreakers": true,
             "inQuickMenu": true,
             "choices": [
-                { "payload": "godziny_otwarcia", "buttonText": "Godziny otwarcia" },
-                { "payload": "asystentka",       "buttonText": "Asystentka" }
+                {
+                    "payload": "godziny_otwarcia",
+                    "buttonText": "Godziny otwarcia"
+                },
+                {
+                    "payload": "asystentka",
+                    "buttonText": "Asystentka"
+                }
             ]
         },
         {
@@ -107,7 +170,10 @@
             "inIceBreakers": true,
             "inQuickMenu": true,
             "choices": [
-                { "payload": "spis", "buttonText": "Spis aktywności" }
+                {
+                    "payload": "spis",
+                    "buttonText": "Spis aktywności"
+                }
             ]
         },
         {
@@ -134,5 +200,3 @@
         }
     ]
 }
-
-
