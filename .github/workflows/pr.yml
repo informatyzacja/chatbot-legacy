@@ -21,3 +21,4 @@ jobs:
         title: Config change from google sheet
         base: development
         branch: development-candidate
+        token: ${{ secrets.PAT }}
