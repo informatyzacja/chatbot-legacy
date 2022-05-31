@@ -1,5 +1,4 @@
 const https = require('https');
-const crypto = require('crypto');
 
 
 /*
@@ -62,7 +61,7 @@ exports.handler = async (event, context) => {
 
     if(httpMethod == 'POST') {
         const postResponse = await post(
-            'https://api.github.com/repos/informatyzacja-sspwr-projekty/Chatbot/actions/workflows/pr-to-development.yml/dispatches',
+            `https://api.github.com/repos/${process.env.GITHUB_REPO}/actions/workflows/pr-to-development.yml/dispatches`,
             {
                 ref: "development"
             },
@@ -78,7 +77,7 @@ exports.handler = async (event, context) => {
         return {
             statusCode: 303,
             headers: {
-                Location: 'https://github.com/informatyzacja-sspwr-projekty/Chatbot/pulls'
+                Location: `https://github.com/${process.env.GITHUB_REPO}/pulls`
             }
         };
     } else {
